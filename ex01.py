@@ -10,9 +10,9 @@ from biblioteca import *
 # gato.miar()
 # vaca1.mugir()
 # coelho1.morrer()
-
-ingresso_normal = Ingresso(12)
+valor = 25
+ingresso_normal = Ingresso(valor)
 ingresso_normal.imprimeValor()
 
-ingresso_vip = IngressoVip(12)
-ingresso_vip.imprimirVip()
+ingresso_vip = IngressoVip(valor)
+ingresso_vip.imprimeValor()

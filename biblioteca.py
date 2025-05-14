@@ -37,8 +37,40 @@ class Ingresso():
 
 class IngressoVip(Ingresso):
     def __init__(self, valor):
-        super().__init__(valor)
-    def imprimirVip(self):
-        self.valor = self.valor + self.valor*0.5
-        print(f"O preço do VIP é: {self.valor}")
+        super().__init__(valor*1.5)
+    def imprimeValor(self):
+        print(f"O valor do VIP é: {self.valor}")
+
+class Forma():
+    def __init__(self):
+        self.area = 0
+        self.perimetro = 0
+
+class Retangulo(Forma):
+    def __init__(self, lado1, lado2):
+        super().__init__()
+        self.lado1 = lado1
+        self.lado2 = lado2
+    def CalculaAreaR(self):
+        self.area = self.lado1*self.lado2
+        print(f"A area do retangulo é {self.area}")
+    def CalculaPerimetroR(self):
+        self.perimetro = self.lado1*2 + self.lado2*2
+        print(f"O perimetro do retangulo é: {self.perimetro}")
+
+class Triangulo(Forma):
+    def __init__(self, base, altura):
+        super().__init__()
+        self.base = base
+        self.altura = altura
+    def CalculaAreaT(self):
+        self.area = (self.base * self.altura)/2
+        print(f"A area do triangulo é: {self.area}")
+    def CalculaPerimetro(self):
+        self.perimetro = self.base*3
+        print(f"O perimetro do triangulo é {self.perimetro}")
+
+
+
+
 
